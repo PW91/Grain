@@ -2,11 +2,162 @@
  *  General
  */
 
-.wrapper {
-    width: 100%;
-    height: 100%;
-    min-width: $min-width;
-    max-width: $max-width;
-    position: relative;
-    margin: 0 auto;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 140px;
+  right: 0;
+  z-index: 3;
+  background-color: white;
+}
+
+.general-wrap {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 140px;
+}
+
+.basic-info {
+  display: flex;
+  align-items: center;
+}
+
+.basic-info__text {
+  margin-left: 40px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.ue-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.hero__video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.hero__video-filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.hero__video {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.hero__content {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 1140px;
+}
+
+.materials {
+  display: flex;
+}
+
+.materials-item {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.grain-img {
+  margin-right: 10px;
+}
+
+.p-wrap {
+  max-width: 65em;
+}
+
+.h1 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+.h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+}
+
+.h3 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 27px;
+  margin: 0;
+  margin-right: 12px;
+}
+
+.h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  margin-left: 12px;
+
+  a {
+    color: black;
+  }
+}
+
+.p {
+  font-size: 32px;
+  line-height: 48px;
+  color: white;
+  margin-bottom: 80px;
+  font-weight: 300;
+}
+
+.decorator {
+  position: relative;
+  background-color: #96866e;
+  font-weight: 400;
+}
+
+.h5 {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.single-contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact-box {
+  margin-left: 40px;
+  border-left: 1px solid #eceaea;
+  padding-left: 40px;
 }

@@ -5,12 +5,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Yeomify generator</title>
+	<title>F.H. RAFAŁ KARP</title>
 
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="Jesteśmy firmą zajmującą się skupem i sprzedażą wszystkich rodzajów zbóż paszowych i konsumpcyjnych.">
+	<meta name="author" content="Rafał Karp">
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap&subset=latin-ext" rel="stylesheet">
 
 	<!-- removeIf(build) -->
 	<!-- build:js css/assets.css -->
@@ -29,13 +30,84 @@
 
 </head>
 <body>
-	<video autoplay muted loop id="myVideo">
-  <source src="./public/background.mp4" type="video/mp4">
-</video>
 
-	<p>Yeoman generator for landing project powered by Gulp.</p>
-	<span>Version: 1.6.2</span>
 
+	<header class='header'>
+		<div class='general-wrap'>
+			<div class='basic-info'>
+				<img src='./public/logo.png' class='logo'/>
+				<div class='basic-info__text'>
+					<h1 class='h1'>F.H. RAFAŁ KARP</h1>
+					<h2 class='h2'>Dąbrowa 2, 97-217 Lubochnia</h2>
+					<div class='ue-wrap'>
+						<h3 class='h3'>Działamy na terenie całej Unii Europejskiej</h3>
+						<img src='./public/ue.svg' class='ue-img'>
+					</div>
+				</div>
+			</div>
+			<div class='contact-info'>
+				<div class='contact-box'>
+					<div class='single-contact'>
+						<img src='./public/mail.svg'/>
+						<h4 class='h4'>
+							<a href='mailto:zboze.handel@gmail.com'>zboze.handel@gmail.com</a>
+						</h4>
+					</div>
+					<div class='single-contact'>
+						<img src='./public/phone.svg'/>
+						<h4 class='h4'>44 724 06 41</h4>
+					</div>
+				</div>
+				<div class='contact-box'>
+					<div class='single-contact'>
+						<img src='./public/mobile.svg'/>
+						<h4 class='h4'>505 794 962</h4>
+					</div>
+					<div class='single-contact'>
+						<img src='./public/mobile.svg'/>
+						<h4 class='h4'>509 410 141</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class='hero'>
+		<div class='hero__video-container'>
+			<div class='hero__video-filter'></div>
+			<video autoplay muted loop playsinline class='hero__video'>
+				<source src="./public/background.mp4" type="video/mp4">
+			</video>
+			<div class='general-wrap'>
+				<div class='hero__content'>
+					<div class='p-wrap'>
+						<p class='p'>Jesteśmy firmą zajmującą się <span class='decorator'>skupem i sprzedażą wszystkich rodzajów zbóż paszowych i konsumpcyjnych</span> takich jak:</p>
+					</div>
+					<div class='materials'>
+						<div class='materials-item'>
+							<img src='./public/grain.svg' class='grain-img'/>
+							<h5 class='h5'>Pszenica</h5>
+						</div>
+						<div class='materials-item'>
+							<img src='./public/grain.svg' class='grain-img'>
+							<h5 class='h5'>Jęczmień</h5>
+						</div>
+						<div class='materials-item'>
+							<img src='./public/grain.svg' class='grain-img'/>
+							<h5 class='h5'>Kukurydza</h5>
+						</div>
+						<div class='materials-item'>
+							<img src='./public/grain.svg' class='grain-img'/>
+							<h5 class='h5'>Pszenżyto</h5>
+						</div>
+						<div class='materials-item'>
+							<img src='./public/grain.svg' class='grain-img'/>
+							<h5 class='h5'>Śruta sojowa</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- removeIf(build) -->
 	<!-- build:js scripts/assets.js -->
 
