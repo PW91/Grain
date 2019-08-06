@@ -141,8 +141,20 @@
 
 .decorator {
   position: relative;
-  background-color: #96866e;
+  //background-color: #96866e;
   font-weight: 400;
+
+  &:after {
+    content: "";
+    width: 106%;
+    height: 30px;
+    border: 1px solid #96866e;
+    background-color: #96866e;
+    position: absolute;
+    bottom: -7px;
+    left: -10px;
+    z-index: -1;
+  }
 }
 
 .h5 {
@@ -160,4 +172,108 @@
   margin-left: 40px;
   border-left: 1px solid #eceaea;
   padding-left: 40px;
+}
+
+.footer {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .general-wrap {
+    width: 991px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-info {
+    display: none;
+  }
+
+  .hero__video-container {
+    min-height: 800px;
+  }
+
+  .basic-info {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .general-wrap {
+    justify-content: center;
+    width: auto;
+    height: 200px;
+  }
+
+  .h1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .h3 {
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  .logo {
+    width: 75px;
+  }
+
+  .header {
+    height: 200px;
+    position: static;
+  }
+
+  .basic-info__text {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .p-wrap {
+    padding: 40px;
+    max-width: 29rem;
+  }
+
+  .p {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0;
+  }
+
+  .materials {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 0 40px;
+  }
+
+  .decorator {
+    &:after {
+      height: 20px;
+      left: -3px;
+      bottom: -3px;
+    }
+  }
+
+  .footer {
+    display: block;
+    padding-bottom: 30px;
+  }
+
+  .materials-item {
+    width: 100%;
+  }
+
+  .contact-box {
+    margin: 20px 0;
+    border: none;
+  }
 }
